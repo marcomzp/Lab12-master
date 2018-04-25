@@ -39,6 +39,7 @@ public final class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 /*        TextView title = findViewById(R.id.Title);
             title.setText("ProbabilityTest");
         ImageView logoPic = findViewById(R.id.Logo);
@@ -51,13 +52,14 @@ public final class MainActivity extends AppCompatActivity {
         // Set up the queue for our API requests
         requestQueue = Volley.newRequestQueue(this);
 
-        setContentView(R.layout.activity_main);
+
         Button searchButton = (Button) findViewById(R.id.Search_Button);
         searchButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, updated.class);
                 startActivity(intent);
+
             }
         });
     }
